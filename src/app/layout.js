@@ -3,8 +3,8 @@ import './globals.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
-import HeaderMain from './partials/Header';
-import FooterMain from './partials/Footer';
+import HeaderMain from './shared/Header';
+import FooterMain from './shared/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,11 +17,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Container>
+        <Container fluid>
           <HeaderMain/>
-          <Row>
-            {children}
-          </Row>
+            <Container>
+              <Row>
+                {children}
+              </Row>
+            </Container>
           <FooterMain/>
         </Container>
       </body>

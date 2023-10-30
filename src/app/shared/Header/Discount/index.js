@@ -1,12 +1,15 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
+import './index.scss'
 
 
 const DiscountMain=()=>{
     return(
         <>
-            <Col>
-                <h3>I'm Discount Main.</h3>
+            <Col
+            className='discount-content'
+            >
+                <h3>Invite Friends and get 50% off on your next purchase.</h3>
             </Col>
         </>
     )
