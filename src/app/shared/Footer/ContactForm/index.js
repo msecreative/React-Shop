@@ -49,12 +49,12 @@ const ContactFormMain=()=>{
                         <InputGroup>
                             <FormControl
                             className='normal-input'
-                            placeholder='search here'
+                            placeholder='Enter Your Email Address'
                             >
 
                             </FormControl>
                             <Button
-                             className='normal-input global-search'
+                             className={`${Module.contactSubmmit} normal-input global-search`}
                             >
                                 Send
                             </Button>

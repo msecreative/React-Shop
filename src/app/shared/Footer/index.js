@@ -12,7 +12,9 @@ const FooterMain=()=>{
             >
                 <ContactFormMain/>
             </Row>
-            <Row>
+            <Row
+            className='footer-info'
+            >
                 <ContactAreaMain/>
             </Row>
         </>
