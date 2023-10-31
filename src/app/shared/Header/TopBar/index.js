@@ -6,7 +6,8 @@ import {
     FormControl,
     InputGroup,
     InputGroupText,
-    Form
+    Form,
+    Button
 } from 'react-bootstrap';
 import './index.scss'
 import Image from 'next/image';
@@ -24,7 +25,7 @@ const TopBarMain=()=>{
                     alignItems:'center'
                 }}
                 >
-                    <Col xs={2} className='logo-div'>
+                    <Col xs={3} className='logo-div'>
                         <Image
                         src="/shop-logo.png"
                         width={250}
@@ -36,6 +37,7 @@ const TopBarMain=()=>{
                         <InputGroup>
                             <FormControl
                             className='normal-input'
+                            placeholder='search here'
                             >
 
                             </FormControl>
@@ -51,7 +53,64 @@ const TopBarMain=()=>{
                             </InputGroupText>
                         </InputGroup>
                     </Col>
-                    <Col xs={5}>
+                    <Col xs={2}>
+                        <Button
+                        className='user-button'
+                        >
+                            <Image
+                            src="/user.png"
+                            width={16}
+                            height={16}
+                            alt="search"
+                            />
+                        </Button>
+
+                        <Button
+                        className='user-button'
+                        style={{
+                            marginLeft:'10px'
+                        }}
+                        >
+                            <Image
+                            src="/cart.png"
+                            width={20}
+                            height={20}
+                            alt="search"
+                            />
+                        </Button>
+                    </Col>
+                    <Col xs={2}>
+                            <Button
+                            className='normal-icon-button'
+                            >
+                                <Image
+                                src="/facebook.png"
+                                width={17}
+                                height={17}
+                                alt="search"
+                                />
+                            </Button>
+                        
+                            <Button
+                            className='normal-icon-button'
+                            >
+                                <Image
+                                src="/instagram.png"
+                                width={18}
+                                height={18}
+                                alt="search"
+                                />
+                            </Button>
+                            <Button
+                            className='normal-icon-button'
+                            >
+                                <Image
+                                src="/youtube.png"
+                                width={18}
+                                height={18}
+                                alt="search"
+                                />
+                            </Button>
                     </Col>
                 </Row>
             </Col>

@@ -1,10 +1,14 @@
 import React from 'react';
-import Col from 'react-bootstrap/Col';
+import {
+    Col,
+    Row
+} from 'react-bootstrap';
 
 const ContactAreaMain=()=>{
     return(
         <>
-            <Col>
+            <Col
+            >
                 <h3>I'm Contact Area Main.</h3>
             </Col>
         </>

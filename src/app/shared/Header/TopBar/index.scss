@@ -9,3 +9,20 @@
     cursor: pointer;
 }
 
+.user-button{
+    background-color: rgba(92, 51, 169, 1);
+    border: 1px solid rgba(92, 51, 169, 1) !important;
+    color: #fff;
+    height: 37px;
+    width: 37px;
+    padding: 10px !important;
+    border-radius: 50px;
+}
+
+.normal-icon-button{
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: none;
+    padding: 2px;
+}

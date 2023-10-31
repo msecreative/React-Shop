@@ -1,11 +1,66 @@
 import React from 'react';
-import Col from 'react-bootstrap/Col'
+import {
+    Col,
+    Container,
+    Row,
+    FormControl,
+    InputGroup,
+    InputGroupText,
+    Form,
+    Button
+} from 'react-bootstrap';
+import Module from './index.module.css';
+import Image from 'next/image';
 
 const ContactFormMain=()=>{
     return(
         <>
             <Col>
-                <h3>I'm Contact Form Main.</h3>
+                <Row
+                style={{
+                    display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center'
+                }}
+                >
+                    <Col
+                    style={{
+                        textAlign:'left',
+                        display:'flex',
+                        justifyContent:'start',
+                        alignItems:'center'
+                    }}
+                    >
+                        <Image
+                        src='/messageBox.png'
+                        height={30}
+                        width={50}
+                        style={{
+                            marginRight:'10px'
+                        }}
+                        />
+                        <p>SIGN UP FOR NEWSLETTER FOR OFFER AND UPDATES</p>
+                    </Col>
+                    <Col
+                    style={{
+                        textAlign:'right'
+                    }}
+                    >
+                        <InputGroup>
+                            <FormControl
+                            className='normal-input'
+                            placeholder='search here'
+                            >
+
+                            </FormControl>
+                            <Button
+                             className='normal-input global-search'
+                            >
+                                Send
+                            </Button>
+                        </InputGroup>
+                    </Col>
+                </Row>
             </Col>
         </>
     )
