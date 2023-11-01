@@ -48,3 +48,16 @@ ul li{
   font-size: 14px;
   font-family: 'Helvetica Neue LT Pro', sans-serif;
 }
+
+.normal-social-button{
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: none;
+  padding: 2px;
+  margin: 4px 10px;
+}
+
+.normal-social-button:last-child{
+  margin-right: 0px;
+}

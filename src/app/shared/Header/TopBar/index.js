@@ -53,7 +53,12 @@ const TopBarMain=()=>{
                             </InputGroupText>
                         </InputGroup>
                     </Col>
-                    <Col xs={2}>
+                    <Col 
+                    xs={2}
+                    style={{
+                        textAlign:'right'
+                    }}
+                    >
                         <Button
                         className='user-button'
                         >
@@ -80,37 +85,37 @@ const TopBarMain=()=>{
                         </Button>
                     </Col>
                     <Col xs={2}>
-                            <Button
-                            className='normal-icon-button'
-                            >
-                                <Image
-                                src="/facebook.png"
-                                width={17}
-                                height={17}
-                                alt="search"
-                                />
-                            </Button>
-                        
-                            <Button
-                            className='normal-icon-button'
-                            >
-                                <Image
-                                src="/instagram.png"
-                                width={18}
-                                height={18}
-                                alt="search"
-                                />
-                            </Button>
-                            <Button
-                            className='normal-icon-button'
-                            >
-                                <Image
-                                src="/youtube.png"
-                                width={18}
-                                height={18}
-                                alt="search"
-                                />
-                            </Button>
+                        <Button
+                        className='normal-social-button'
+                        >
+                            <Image
+                            src="/facebook.png"
+                            width={16}
+                            height={16}
+                            alt="search"
+                            />
+                        </Button>
+                    
+                        <Button
+                        className='normal-social-button'
+                        >
+                            <Image
+                            src="/instagram.png"
+                            width={20}
+                            height={20}
+                            alt="search"
+                            />
+                        </Button>
+                        <Button
+                        className='normal-social-button'
+                        >
+                            <Image
+                            src="/youtube.png"
+                            width={22}
+                            height={22}
+                            alt="search"
+                            />
+                        </Button>
                     </Col>
                 </Row>
             </Col>

@@ -2,8 +2,10 @@ import Link from 'next/link';
 import React from 'react';
 import {
     Col,
+    Button,
     Row
 } from 'react-bootstrap';
+import Image from 'next/image';
 import Module from './index.module.css';
 
 const ContactAreaMain=()=>{
@@ -90,7 +92,37 @@ const ContactAreaMain=()=>{
                         textAlign:'left'
                     }}
                     >
-                        <span>social icon</span>
+                        <Button
+                        className='normal-social-button'
+                        >
+                            <Image
+                            src="/facebook.png"
+                            width={16}
+                            height={16}
+                            alt="search"
+                            />
+                        </Button>
+                    
+                        <Button
+                        className='normal-social-button'
+                        >
+                            <Image
+                            src="/instagram.png"
+                            width={20}
+                            height={20}
+                            alt="search"
+                            />
+                        </Button>
+                        <Button
+                        className='normal-social-button'
+                        >
+                            <Image
+                            src="/youtube.png"
+                            width={22}
+                            height={22}
+                            alt="search"
+                            />
+                        </Button>
                     </Col>
                     <Col 
                     xs={6}
