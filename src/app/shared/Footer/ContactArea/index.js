@@ -5,8 +5,13 @@ import {
     Button,
     Row
 } from 'react-bootstrap';
+import AboutMain from './About';
+import QuickLinks from './QuickLinks';
+import ServiceMain from './Service';
+import ContactMain from './Contact';
 import Image from 'next/image';
 import Module from './index.module.css';
+import './index.scss';
 
 const ContactAreaMain=()=>{
     return(
@@ -14,86 +19,29 @@ const ContactAreaMain=()=>{
             <Col
             >
                 <Row
+                className='footer-container'
                 >
-                    <Col>
-                        <strong><b>About</b></strong><br/><br/>
-                        <span>
-                            Korean Shop BD is the online platform, one of the largest retail supermarket in Bangladesh. 
-                            A business entity that’s defining the standards in innovation and service quality in the nation.
-                        </span>
-                    </Col>
-                    <Col>
-                        <strong>QUICK LINKS</strong><br/><br/>
-                        <ul>
-                            <li>
-                                <Link href="/">
-                                    About Us
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    Information
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    Privacy Policy
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    Terms & Conditions
-                                </Link>
-                            </li>
-                        </ul>
-                    </Col>
-                    <Col>
-                        <strong>Service</strong><br/><br/>
-                        <ul>
-                            <li>
-                                <Link href="/">
-                                    Blog
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    BRANDS
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    Products
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/">
-                                    Skip Concern
-                                </Link>
-                            </li>
-                        </ul>
-                    </Col>
-                    <Col>
-                        <strong><b>Service</b></strong><br/><br/>
-                        <span>
-                        Zigatola dhanmondi 1209
-                        </span><br/>
-                        <span>
-                        Email: koreanshop@gmail.com
-                        </span>
-                        <br/>
-                        <span>Hotline: +880170000000</span>
-                    </Col>
+                    <AboutMain/>
+                    <QuickLinks/>
+                    <ServiceMain/>
+                    <ContactMain/>
                 </Row>
-                <hr className={Module.hrStyle}/>
-                <Row>
+                <hr 
+                //className={Module.hrStyle}
+                className="footer-hr-section"
+                />
+                <Row
+                className='footer-bottom-container'
+                >
                     <Col 
-                    xs={3}
+                    xl={3}
+                    xs={12}
                     style={{
                         textAlign:'left'
                     }}
                     >
                         <Button
-                        className='normal-social-button'
+                        className='normal-social-button no-left-margin'
                         >
                             <Image
                             src="/facebook.png"
@@ -125,21 +73,20 @@ const ContactAreaMain=()=>{
                         </Button>
                     </Col>
                     <Col 
-                    xs={6}
-                    style={{
-                        justifyContent:'center',
-                        textAlign:'center'
-                    }}
+                    xl={6}
+                    xs={12}
+                    className='footer-copyright-column'
                     >
                        <span>© 2023 Korean Shop BD | All Rights Reserved.</span> 
                     </Col>
                     <Col 
-                    xs={3}
+                    xl={3}
+                    xs={12}
                     style={{
                         textAlign:'right'
                     }}
                     >
-                        <span>payment method</span>
+                        <span>Work In Progress...</span>
                     </Col>
                 </Row>
             </Col>
